@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(16, 16, 15);
+    color: rgb(13, 13, 13);
     padding: 20px;
 }
 
@@ -25,12 +25,21 @@
 
 .conteudo {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column; /* Altera a direção do flexbox para coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha os itens no topo */
     width: 100%;
     max-width: 1000px;
+    
 }
 
-h1, h2, ul {
-    vertical-align: top;
+.redesociais {
+    color: rgb(249, 247, 247);
+}
+
+.formulario {
+    position: absolute;
+    top: 70px; /* Ajusta a distância do topo */
+    right: 50px; /* Ajusta a distância da direita */
+    color: rgb(13, 12, 12);
 }

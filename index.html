@@ -26,18 +26,28 @@
                 </ul>
             </div>
             
-            <div class="video">
+            <div class="video" id="meuVideo">
                 <iframe width="260" height="204" src="https://player.vimeo.com/video/286460845?loop=1" frameborder="0" allowfullscreen></iframe>
             </div>
             
             <div class="redesociais">
                 <h2>Segue nossas redes sociais:</h2>
                 <ul>
-                    <li>Youtube : <a href="www.youtube.com"> Clique aqui</a></li>
-                    <li>Facebook : <a href="www.facebook.com"> Clique aqui</a></li>
-                    <li>Instagram : <a href="www.instagram.com"> Clique aqui</a></li>
+                    <li>Youtube : <a href="https://www.youtube.com/" target="_blank"> Clique aqui</a></li>
+                    <li>Facebook : <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"> Clique aqui</a></li>
+                    <li>Instagram : <a href="https://www.instagram.com/" target="_blank"> Clique aqui</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="formulario">
+            <h2>Confirme sua presença no próximo evento:</h2>
+            <form action="seuscript.php" method="GET">
+                <label for="nome" style="display: inline-block; width: 150px; text-align: right;">Digite seu nome:</label>
+                <input type="text" value="" name="nome" id="nome"><br>
+                <label for="tel" style="display: inline-block; width: 150px; text-align: right;">Digite seu número:</label>
+                <input type="number" max="11" name="tel" id="tel">
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </div>
     <script src="javascript.js"></script>
