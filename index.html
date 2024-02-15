@@ -13,6 +13,18 @@
         <marquee behavior="scroll" direction="left"><h1>Bem-vindos ao Site do Piquete</h1></marquee>
 
         <div class="conteudo">
+            <div class="historico">
+                <h2>Dados dos clientes:</h2>
+                <?php
+                // Lê o arquivo do script PHP e exibe os registros
+                $linhas = file(__FILE__);
+                echo "<ol>";
+                foreach ($linhas as $linha) {
+                    echo "<li>$linha</li>";
+                }
+                echo "</ol>";
+                ?>
+            </div>
             <div class="horarioatendimento">
                 <h2>Horarios de atendimento:</h2>
                 <ul>
