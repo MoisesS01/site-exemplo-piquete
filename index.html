@@ -41,15 +41,24 @@
         </div>
         <div class="formulario">
             <h2>Confirme sua presença no próximo evento:</h2>
-            <form action="seuscript.php" method="GET">
+            <form action="seuscript.php" method="GET" onsubmit="return enviarFormulario();">
                 <label for="nome" style="display: inline-block; width: 150px; text-align: right;">Digite seu nome:</label>
                 <input type="text" value="" name="nome" id="nome"><br>
                 <label for="tel" style="display: inline-block; width: 150px; text-align: right;">Digite seu número:</label>
-                <input type="number" max="11" name="tel" id="tel">
+                <input type="number"  name="tel" id="tel">
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </div>
     <script src="javascript.js"></script>
+    <script>
+        function enviarFormulario() {
+            // Exibir alerta de sucesso
+            alert("Dados enviados com sucesso!");
+            // Reiniciar a página
+            window.location.reload();
+            return false; // Evitar que o formulário seja enviado normalmente
+        }
+    </script>
 </body>
 </html>
