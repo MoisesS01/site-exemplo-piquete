@@ -1,7 +1,7 @@
 // script.js
 window.addEventListener('load', function() {
     document.body.addEventListener('mouseleave', function() {
-        alert("Já clicou em marcar a presença para garantir um lugar no próximo evento?");
+        alert("Já clicou em 'marcar presença' para garantir um lugar no próximo evento?");
     });
 });
 
